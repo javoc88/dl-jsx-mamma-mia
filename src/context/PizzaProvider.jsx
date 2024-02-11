@@ -13,7 +13,7 @@ export const PizzaProvider = ({ children }) => {
 
   const getPizzas = async () => {
     try {
-      const res = await fetch("public/pizzas.json");
+      const res = await fetch("pizzas.json");
       const data = await res.json();
       setPizzas(data);
     } catch (error) {
